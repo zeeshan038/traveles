@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 2px 0px black;
+}
+
+.logo {
+  color: black;
+  font-size: 2.2rem;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+li {
+  list-style: none;
+  color: black;
+}
+
+li a {
+  text-decoration: none;
+  padding: 11px 30px;
+  transition: 0.5s;
+  color: black;
+  font-size: 1rem;
+}
+li a:hover {
+  background-color: gray;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+}
+#home {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 850px;
+}
+
+#home::before {
+  content: "";
+  background-image: url("images/img\ \(3\).jpg");
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.container {
+  animation: slideleft 4s backwards;
+  transition: all 2s ease-in-out;
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+.maintext {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 14rem;
+  color: white;
+}
+.btn {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 8px 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+}
+.btn:hover {
+  background-color: gray;
+  color: white;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.button {
+  padding-left: 12rem;
+  padding-top: 2rem;
+}
+h1 {
+  color: black;
+}
+#facilities {
+  height: 379px;
+  color: black;
+}
+.mainbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  color: black;
+}
+.box p {
+  color: black;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.ourFacilities {
+  text-align: center;
+  font-size: 2.3rem;
+  text-decoration: underline;
+  color: black;
+}
+.box {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 23px;
+}
+.box img {
+  height: 80px;
+  background-color: none;
+}
+#About {
+  height: 200px;
+  background-color: rgb(21, 27, 27);
+}
+.aboutus {
+  color: white;
+  font-size: 2.5rem;
+  padding-left: 2rem;
+}
+
+p {
+  color: white;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-size: 1.3rem;
+}
+#Bookus {
+  padding-top: 4rem;
+  height: 450px;
+}
+.book {
+  font-size: 3rem;
+  text-align: center;
+}
+.form {
+  text-align: center;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  background-color: beige;
+}
+.formElement {
+  font-size: 1.4rem;
+}
+input {
+  margin: 0.7rem 0.2rem;
+  border: none;
+  border-radius: 23px;
+  border: 1px solid gray;
+  padding: 10px 10rem;
+}
+button {
+  margin-top: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 13px;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: 1s;
+}
+button:hover {
+  background-color: gray;
+  color: white;
+}
+#footer {
+  color: white;
+  height: 400px;
+  background-color: rgb(59, 51, 51);
+  display: flex;
+  justify-content: space-around;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+}
+h4 {
+  font-size: 1.7rem;
+  padding-left: 5rem;
+
+  padding-top: 5rem;
+}
+p {
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+.pricing {
+  color: white;
+  padding-top: 5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+a {
+  color: white;
+  list-style: none;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.RecentTours {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+h4 {
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding: 1.3rem;
+}
+a:hover {
+  text-decoration: underline;
+}
+.social {
+  display: flex;
+  padding-top: 20rem;
+}
+.SocialMEdia {
+  font-size: 1.7rem;
+  padding: 4px 8px;
+}
+.fa-solid {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+/* Responsiveness */
+@media (max-width: 776px) {
+  li a {
+    padding: 8px 9px;
+  }
+}
+@media (max-width: 764px) {
+  .fa-solid {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-links {
+    position: fixed;
+    top: 5%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    transition: 0.5s all ease-in-out;
+  }
+  .nav-links.showNav {
+    transform: translateX(0%);
+  }
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    background-color: white;
+  }
+  .nav-links ul li {
+    /* color: black; */
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 0px;
+  }
+  .nav-links ul li a {
+    color: black;
+  }
+  #home {
+    height: 650px;
+  }
+  #facilities {
+    height: 850px;
+  }
+  .mainbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+}
+@media (max-width: 757px) {
+  #home {
+    height: 820px;
+  }
+  #About {
+    width: 100%;
+  }
+}
+@media (max-width: 631px) {
+  #home {
+  }
+  #home::before {
+    content: "";
+
+    position: absolute;
+    width: 107%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  #navbar {
+    width: 102%;
+  }
+  #About {
+    width: 104%;
+  }
+  #footer {
+    width: 104%;
+  }
+}
+@media (max-width: 606px) {
+  #home::before {
+    content: "";
+
+    position: absolute;
+    width: 116%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  #navbar {
+    width: 108%;
+    overflow: hidden;
+  }
+  #About {
+    width: 108%;
+  }
+  #Bookus {
+    width: 108%;
+  }
+  #footer {
+    width: 108%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 1200px;
+  }
+  .social {
+    padding-top: 60px;
+  }
+  input {
+    margin: 0.7rem 0.2rem;
+    padding: 6px 7rem;
+  }
+}
+@media (max-width: 505px) {
+  #home::before {
+    content: "";
+
+    position: absolute;
+    width: 120%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  #navbar {
+    width: 110%;
+    overflow: hidden;
+  }
+  input {
+    margin: 0.7rem 0.2rem;
+
+    padding: 6px 2rem;
+  }
+}
+@media (max-width: 440px) {
+  #home::before {
+    content: "";
+
+    position: absolute;
+    width: 123%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  #navbar {
+    width: 110%;
+    overflow: hidden;
+  }
+  #facilities {
+    height: 1000px;
+  }
+}
+@media (max-width: 376px) {
+  #home::before {
+    content: "";
+
+    position: absolute;
+    width: 150%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  #navbar {
+    width: 123%;
+    overflow: hidden;
+  }
+  #facilities {
+    height: 100px;
+  }
+  #About {
+    width: 123%;
+  }
+  #Bookus {
+    width: 123%;
+  }
+  input {
+    margin: 0.7rem 0.2rem;
+    padding: 6px 3rem;
+  }
+  #footer {
+    width: 123%;
+  }
+}
